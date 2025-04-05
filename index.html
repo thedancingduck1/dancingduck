@@ -3,55 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Dancing Duck</title>
+  <title>Huey The Dancing Duck</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #fff4db, #ffd6e0);
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background-color: #fffdf5;
+      font-family: 'Courier New', Courier, monospace;
+      color: #222;
       text-align: center;
-      color: #333;
+      padding: 40px 20px;
+    }
+    img {
+      max-width: 200px;
+      border-radius: 16px;
+      margin-bottom: 20px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.5em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #444;
+      font-weight: normal;
+      font-size: 1.2em;
+      margin-top: 0;
     }
     p {
-      font-size: 1.5em;
       max-width: 600px;
-      margin: 0 20px;
+      margin: 0 auto 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
-    .logo {
-      width: 150px;
-      margin-bottom: 20px;
-      animation: float 3s ease-in-out infinite;
+    .token {
+      font-family: monospace;
+      background: #eee;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 20px auto;
+      display: inline-block;
     }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    .extra-img {
+      margin-top: 40px;
+      max-width: 250px;
     }
     .footer {
-      position: absolute;
-      bottom: 20px;
       font-size: 0.9em;
       color: #888;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <!-- If you have a logo image, replace 'duck.png' with its URL -->
-  <!-- <img src="duck.png" alt="Dancing Duck Logo" class="logo" /> -->
+  <img src="data:image/png;base64,{{LOGO_IMAGE}}" alt="Huey Logo" />
+  <h1>Huey The Dancing Duck</h1>
+  <h2>"One token, one dance."</h2>
 
-  <h1>The Dancing Duck</h1>
-  <p>For every token, the duck does a dance.<br>Join the waddle. Fuel the rhythm. Embrace the quack.</p>
+  <p>Welcome to the world of Huey — the ultimate meme token on Solana. Every time you hold, buy, or share $HUEY, a duck somewhere wiggles its tail and busts a move.</p>
 
-  <div class="footer">© 2025 The Dancing Duck. All rights reserved.</div>
+  <p class="token"><strong>Token Address:</strong><br>LERdCLAUpFURpveysGC2zmsESBSjB47xCaE2BkLP61s</p>
+
+  <div class="links">
+    <a href="https://www.tiktok.com/@hueythedancingduck1?is_from_webapp=1&sender_device=pc" target="_blank">🎵 TikTok</a>
+    <a href="https://solscan.io/token/LERdCLAUpFURpveysGC2zmsESBSjB47xCaE2BkLP61s" target="_blank">🔍 View on Solscan</a>
+    <a href="https://raydium.io/" target="_blank">🛒 Buy on Raydium</a>
+  </div>
+
+  <p><strong>Our promises:</strong></p>
+  <ul style="list-style: none; padding: 0; line-height: 1.8;">
+    <li>🕺 1 token = 1 duck dance</li>
+    <li>📈 No roadmap. Just rhythm.</li>
+    <li>🧠 No utility. Just pure meme energy.</li>
+    <li>🐤 Huey never stops dancing.</li>
+  </ul>
+
+  <img class="extra-img" src="data:image/png;base64,{{SECOND_IMAGE}}" alt="Dancing Huey" />
+
+  <div class="footer">
+    © 2025 Huey The Dancing Duck. Quack responsibly.
+  </div>
+
 </body>
 </html>
+
