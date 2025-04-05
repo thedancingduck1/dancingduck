@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Dancing Duck</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fff4db, #ffd6e0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 0 20px;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- If you have a logo image, replace 'duck.png' with its URL -->
+  <!-- <img src="duck.png" alt="Dancing Duck Logo" class="logo" /> -->
+
+  <h1>The Dancing Duck</h1>
+  <p>For every token, the duck does a dance.<br>Join the waddle. Fuel the rhythm. Embrace the quack.</p>
+
+  <div class="footer">© 2025 The Dancing Duck. All rights reserved.</div>
+</body>
+</html>
